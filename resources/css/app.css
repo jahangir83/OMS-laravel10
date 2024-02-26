@@ -3,14 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
     body {
         @apply relative z-1 bg-whiten font-satoshi text-base font-normal text-body;
     }
-}
-
-@layer components {
-}
+} */
 
 @layer utilities {
     /* Chrome, Safari and Opera */
@@ -23,10 +20,10 @@
         scrollbar-width: none; /* Firefox */
     }
 
-    .chat-height {
+    /* .chat-height {
         @apply h-[calc(100vh_-_8.125rem)] lg:h-[calc(100vh_-_5.625rem)];
     }
     .inbox-height {
         @apply h-[calc(100vh_-_8.125rem)] lg:h-[calc(100vh_-_5.625rem)];
-    }
+    } */
 }

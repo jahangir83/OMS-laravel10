@@ -240,7 +240,7 @@
           </span>
 
           <span class="h-12 w-12 rounded-full">
-            <img src="src/images/user/user-01.png" alt="User" />
+            <img class="w-full h-full rounded-full" src="https://media-ccu1-1.cdn.whatsapp.net/v/t61.24694-24/381361404_868872241257061_1612034952239160555_n.jpg?ccb=11-4&oh=01_AdRFzeyUnSsPXm6sozBdpX0HNIjFrEhZ66XpHzbEylzZkw&oe=65E9C69A&_nc_sid=e6ed6c&_nc_cat=104" alt="User" />
           </span>
 
           <svg :class="dropdownOpen && 'rotate-180'" class="hidden fill-current sm:block" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
