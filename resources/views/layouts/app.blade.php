@@ -15,22 +15,30 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @include('layouts.navigation')
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
+       
+         
+
+<!-- Text Header -->
+<header class="w-full  mx-auto">
+<!-- Topic Nav -->
+@include('layouts.navigation')
+</header>
+
+
+
+
+  
 
             <!-- Page Content -->
-            <main>
+            <div class="container mx-auto py-6">
                 {{ $slot }}
-            </main>
-        </div>
+</div>
+        
+<footer class="w-full border-t bg-white pb-12">
+    <div class="w-full container mx-auto flex flex-col items-center">
+        <div class="uppercase py-6">&copy; myblog.com</div>
+    </div>
+</footer>
     </body>
 </html>
