@@ -1,7 +1,7 @@
 <aside :class="sidebarToggle ? 'translate-x-0' : '-translate-x-full'" class="absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0" @click.outside="sidebarToggle = false">
   <!-- SIDEBAR HEADER -->
   <div class="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-    <a href="index.html">
+    <a href="/">
       <img src="src/images/logo/logo.svg" alt="OMS" />
     </a>
 
@@ -96,6 +96,12 @@
             <!-- Dropdown Menu Start -->
             <div class="translate transform overflow-hidden" :class="(selected === 'UsersManage') ? 'block' :'hidden'">
               <ul class="mb-5.5 mt-4 flex flex-col gap-2.5 pl-6">
+
+                <li>
+                  <a class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white" href="{{url('dashboard/users')}}" :class="page === 'dashboard/permissions' && '!text-white'">Users</a>
+                </li>
+
+
                 <li>
                   <a class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white" href="{{url('dashboard/permissions')}}" :class="page === 'dashboard/permissions' && '!text-white'">Permission</a>
                 </li>

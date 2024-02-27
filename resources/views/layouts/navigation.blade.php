@@ -1,5 +1,5 @@
 @include('components.css.frontNavStyle')
-<nav class="navbar">
+<nav class="navbar ">
     <div class="navbar-container container">
         <input type="checkbox" name="" id="">
         <div class="hamburger-lines">
@@ -83,7 +83,7 @@
             <li><a href="{{ route('login') }}" class="font-semibold text-blue-500  hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
             </li>
             @if (Route::has('register'))
-            <li> <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a></li>
+            <li> <a href="{{ route('register') }}" class=" font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a></li>
             @endif
             @endauth
             @endif

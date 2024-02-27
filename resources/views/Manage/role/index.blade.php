@@ -49,7 +49,10 @@
                             </td>
 
                             <td class="px-6 py-4">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <a href="{{url('dashboard/roles/'.$role->id.'/give-permission')}}">Add / Edit Role Permission</a>
+                                <a href="{{url('dashboard/roles/'.$role->id.'/edit')}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <span>/</span>
+                                <a onclick="confirm('Are you Sure?')" href="{{url('dashboard/roles/'.$role->id.'/delete')}}" class="font-medium bg-danger text-white hover:underline">Delete</a>
                             </td>
                         </tr>
 
